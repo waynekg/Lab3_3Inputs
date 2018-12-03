@@ -98,4 +98,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         textViewPremium.setText("Your Premium is RM " + String.format("%.2f",premium));
     }
+    
+    public void resetEverything(View view){
+        spinnerAge.setSelection(0);
+        radioGroupGender.clearCheck();
+        checkBoxSmoker.setChecked(false);
+        textViewPremium.setText(getString(R.string.premium));
+    }
 }
